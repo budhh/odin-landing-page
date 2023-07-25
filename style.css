@@ -6,64 +6,118 @@
   --hero-secondary-text: #e5e7eb;
   --header-logo-text: #f9faf8;
   --button: #3882f6;
+  --button-hover: #2962ba;
   --information-header-text: #1f2937;
   --quote-background: #e5e7eb;
   --quote-text: #1f2937;
+
+  --radius: 0.5rem;
 }
 
 body {
-    display: flex;
-    font-family: Roboto;
-    flex-direction: column;
-    margin: 0;
+  display: flex;
+  font-family: Roboto;
+  flex-direction: column;
+  margin: 0;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--dark-background);
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--dark-background);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 
-    color: var(--header-logo-text);
-    font-size: 24px;
-    font-weight: 800;
+  color: var(--header-logo-text);
+  font-size: 24px;
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  gap: 2rem;
+  align-items: center;
 
-    font-size: 18px;
-    color: var(--hero-secondary-text);
+  font-size: 18px;
+  color: var(--hero-secondary-text);
 }
 
 li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .body {
-    flex: 1;
+  flex: 1;
 }
 
-.box1{
-    display: flex;
-    flex-direction: row;
-    background: var(--dark-background);
-
-    color: var(--hero-main-text);
+.box1 {
+  display: flex;
+  flex-direction: row;
+  background: var(--dark-background);
+  padding: 8rem;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--hero-main-text);
 }
 
 .box1-left {
-    color: white;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  color: var(--hero-main-text);
+  font-size: 48px;
+  font-weight: 800;
+  margin: 4rem;
+}
+
+.box1-left > p {
+  display: flex;
+  font-size: 18px;
+  color: var(--hero-secondary-text);
+  font-weight: 100;
 }
 
 .box1-img {
-    width: 230px;
-    height: 150px;
+  width: 500px;
+  height: 250px;
+}
+
+.button-signup {
+  border-radius: var(--radius);
+  border-style: none;
+  width: 100px;
+  background-color: var(--button);
+  color: white;
+  display: inline-block;
+  padding: 0.4rem;
+
+  &:hover {
+    background: var(--button-hover);
+  }
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem;
+}
+
+.box2-img {
+    width: 100px;
+    height: 100px;
+    border-radius: var(--radius);
+    border-color: var(--button);
+    border: 20px solid var(--radius);
 }
