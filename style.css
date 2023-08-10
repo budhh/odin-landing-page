@@ -140,14 +140,17 @@ li {
 }
 
 .box3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding: 2rem;
   background-color: var(--quote-background);
 }
 
+.quote{
+ font-size: 36px;
+ font-weight: 300;
+ font-style: italic;
+ color: var(--dark-background); 
+}
 .quote-author {
-  float: right;
+  text-align: right;
+  font-weight: bold;
 }
