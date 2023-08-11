@@ -154,3 +154,49 @@ li {
   text-align: right;
   font-weight: bold;
 }
+
+.box4 {
+  padding: 4rem;
+}
+
+.modal{
+  background-color: var(--button);
+  border-radius: var(--radius);
+  padding: 4rem 6rem;
+  align-items: center;
+
+  display: flex;
+}
+
+.box4-title {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* padding-bottom: 1rem; */
+
+  color: var(--hero-main-text);
+  font-size: 24px;
+  color: var(--header-logo-text);
+}
+
+.box4-description {
+  font-size: 18px;
+  color: var(--quote-background);
+}
+
+.box4-button {
+  border: 2px solid wheat;
+  background-color: var(--button);
+  border-radius: var(--radius);
+  color: white;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--button-hover);
+  }
+}
