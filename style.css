@@ -200,3 +200,13 @@ li {
     background: var(--button-hover);
   }
 }
+
+.footer {
+  display: flex;
+  padding: 2rem 0rem;
+  background-color: var(--dark-background);
+  color: var(--quote-background);
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+}
